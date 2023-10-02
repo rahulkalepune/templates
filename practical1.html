@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <style>
+      .btn {
+        /* background-color: transparent; */
+        /* color: #fff; */
+      }
+      .dropdown {
+        position: relative;
+      }
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        /* background-color: #f9f9f9; */
+        min-width: 158px;
+        z-index: 1;
+      }
+      .dropdown-menu a:hover {
+        background-color: #000;
+        color: #fff;
+      }
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+      .dropdown:hover .btn {
+        /* background-color: #fff; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <button
+        class="btn btn-primary dropdown-toggle"
+        type="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        MENU
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Dropdown item</a></li>
+        <li><a class="dropdown-item" href="#">Dropdown item</a></li>
+        <li><a class="dropdown-item" href="#">Dropdown item</a></li>
+      </ul>
+    </div>
+
+
+  <!-- curosel start -->
+
+  
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

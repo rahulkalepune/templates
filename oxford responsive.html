@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>navbar</title>
+    
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/owl/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owl/assets/owl.theme.default.css">
+    <style>
+      .navbar {
+        background-color: #002147 !important;
+      }
+      .navbar li a {
+        font-size: 1.31em;
+        color: rgba(255, 255, 255, 0.7) !important;
+        margin-left: 0px;
+      }
+
+      
+      
+
+      .navbar img {
+      }
+      .nav-item {
+        position: relative;
+
+      }
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        min-width: 158px;
+        z-index: 1;
+        border-radius: 0;
+        padding: 0;
+      }
+      
+      .dropdown-menu a:hover {
+        background-color: #2f72a8;
+        color: #fff !important;
+      }
+      .nav-item:hover .dropdown-menu {
+        display: block;
+      }
+      .nav-item ul li a {
+        height: 40px;
+        color: #2f72a8 !important;
+        border-bottom: 1px solid rgb(187, 178, 179);
+      }
+      
+      .space {
+        align-items: center;
+        list-style: none;
+        /* text-decoration: none; */
+      }
+
+
+
+      .carousel-item img {
+        height: 550px !important;
+        width: 100%;
+      }
+      
+          .heading a{
+            color: black;
+            border-bottom: 1px solid black;
+        
+
+          }
+          
+        
+
+          
+          .heading a:hover{
+           background-color:brown;
+        
+          
+            
+          }
+          .info img:hover{
+          transform: scale(1.005);
+            
+          }
+          .info p{
+            color:black !important ;
+            font-weight: bold;
+            font-size: 18px;
+          }
+          .info p:hover .corcol{
+            color:red !important;
+            
+          }
+          .discover {
+        background-color: #bcb7b7 !important;
+      }
+
+       .discover div img:hover{
+          filter: grayscale(90%);
+          transform: scale(1.005);
+      }
+       .discover div img{
+          filter: grayscale(0%);
+      }
+      
+      .discover .item a:hover {
+        color: brown !important;
+      }
+      .item img{
+        height: 200px;
+        width: 200px;
+      }
+       .item{
+               font-weight: bold !important;
+       }
+          
+       .study  div:hover{
+        filter: grayscale(70%);
+        transform: scale(1.005);
+        transition: ease-in;
+       }
+       .footer{
+        background-color: #002147 !important;
+       }
+       hr{
+        color:aliceblue;
+       }
+       .footerinfo li{
+        color: #fff !important;
+        
+       }
+          
+       .footerinfo li:hover{
+        transform: scale(1.02);
+        cursor: pointer;
+       }
+       .dropdowm-menu{
+           border-top: 1px solid #fff !important;
+           color: #4d98ed !important;
+       }
+       .dropdowm-menu:hover{
+        color: aliceblue !important;
+        background-color: #4d98ed !important;
+       }
+          
+     .dropdown-menu img{
+         height: 200px;
+         width: 200px;
+     } 
+     
+     
+     .aaa{
+      background-color: rgba(243, 241, 236, 0.8);
+      color: black !important;
+      font-weight: bold;
+     }
+
+     .aabb:hover .aaa{
+
+      color: red !important;
+     }
+     
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-primary fixed-top">
+      <nav class="navbar bg-primary col-1">
+        <div class="container">
+          <a class="navbar-brand " href="#">
+            <img
+              src="assets/images/oxweb-logo (1).gif"
+              alt=""
+              width="100"
+              height="100"
+            />
+          </a>
+        </div>
+      </nav>
+      <div class="container-fluid col-5">
+        <button
+          class="navbar-toggler "
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarid"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarid">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link dropdown-toggle">ADMISSIONS</a>
+              <ul class="dropdown-menu ">
+                <li><a class="dropdown-item" href="# ">Under Graduate</a></li>
+                <li><a class="dropdown-item" href="#">Graduate</a></li>
+                <li>
+                  <a class="dropdown-item border-0" href="#"
+                    >Continuing Education</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link dropdown-toggle">RESEARCH</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Engage with us</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Support for researchers</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Using research to engage</a>
+                </li>
+                <li>
+                  <a class="dropdown-item border-0" href="#">Recognition</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link dropdown-toggle">NEWS & EVENT</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Events</a></li>
+                <li><a class="dropdown-item" href="#">Features</a></li>
+                <li><a class="dropdown-item" href="#">Oxford profiles</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Oxford & coronavirus</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Ukraine</a></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >News releases for journalists</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">Filming in Oxford</a></li>
+                <li>
+                  <a class="dropdown-item border-0" href="#">Find An expert</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link dropdown-toggle">ABOUT</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Organisations</a></li>
+                <li><a class="dropdown-item" href="#">Facts and figure</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Oxford people</a>
+                  <a class="dropdown-item" href="#">Oxford Access</a>
+                  <a class="dropdown-item" href="#">International Oxford </a>
+                  <a class="dropdown-item" href="#">Building our futures</a>
+                  <a class="dropdown-item border-0" href="#">Jobs</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row row-col-6">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-lg bg-primary">
+              <div class="container-fluid">
+                <!-- <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button> -->
+                <div class="collapse navbar-collapse" id="navbarid">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-6">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#"
+                        >Collages</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Division & departments</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex" role="search">
+                    <input
+                      class="form-control me-2"
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+
+                    <button class="btn btn-outline-success" type="submit">
+                      Search
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <div class="col-12">
+            <nav class="navbar navbar-expand-lg bg-primary">
+              <div class="container-fluid">
+                <!-- <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button> -->
+                <div class="collapse navbar-collapse" id="navbarid">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-6">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Coronavirus</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Staff</a>
+                    </li>
+                    <li class="nav-item" >
+                      <a class="nav-link" href="https://www.ox.ac.uk/students">Oxford students</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">Alumni</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">Local community</a>
+                    </li>
+                  </ul>
+                  <!-- <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+       <!-- courousel start -->
+
+
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="false"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active opacity-100">
+          <img
+            src="assets/images/bcar_ug_open_days_3.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div
+            class="carousel-caption d-none d-md-block shadow-lg p-3 mb-5 color-#2c2c2c back"
+          >
+            <h1>
+              COME AND SEE US! OUR UNDERGRADUATE OPEN DAY IS ON 16 SEPTEMBER
+            </h1>
+            <h5>
+              meet staf and students,tour collages and departments,and find out
+              whats it's really like to be a student here
+            </h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src=" assets/images/GAF Radcliffe Square Dawn - Elizabeth Nyikos.jpg  "
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>
+              APPLICATIONS OPEN FOR MASTERS'S,DPHIL(PHD) AND OTHER GRADUATE
+              COURCES
+            </h1>
+            <h5>
+              Explore hundreads of graduate cources now open for entry in
+              2023-24
+            </h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/images/oxford/Students sitting on steps.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>
+              APPLICATIONS OPEN FOR MASTERS'S,DPHIL(PHD) AND OTHER GRADUATE
+              COURCES
+            </h1>
+            <h5>
+              Explore hundreads of graduate cources now open for entry in
+              2023-24
+            </h5>
+          </div>
+        </div>
+
+        <!-- <div class="carousel-item">
+          <iframe
+            class="row col-12 m-0"
+            width="1105"
+            height="380"
+            src="https://www.youtube.com/embed/MJNz9_M3kFg?list=TLGGtIsZ1B5YN-gwNzA5MjAyMg"
+            title="Innovation landing page 1600x550"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="carousel-caption d-none d-md-block">
+            <h1>WASTE LAND</h1>
+            <h5>
+              An ariel photography exibition both online and at the oxford
+              university museum of natural history
+            </h5>
+          </div>
+        </div> -->
+        <div class="carousel-item">
+          <img
+            src="   assets/images/bcar_nathist_wasteland.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>WASTE LAND</h1>
+            <h5>
+              An ariel photography exibition both online and at the oxford
+              university museum of natural history
+            </h5>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon " aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="row row-6 d-flex flex-row mb-3 mt-5">
+      <ul class="d-flex space">
+        <li><h1>NEWS</h1></li>
+        <li class="ms-4"><a href="#">All News</a></li>
+        <li class="ms-auto"><h1>EVENTS</h1></li>
+        <li class="ms-4"><a href="#">All Events</a></li>
+      </ul>
+      <!-- <div class="row">
+        <div class="col-md-3">
+
+
+      <img
+        src="assets/images/shutterstock_282828380.jpg"
+        class="col-3 rounded float-start "
+        alt="..."
+      />
+      <p class="text-dark text-center">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
+        perferendis tempore, illo cupiditate in quos, eum iusto quibusdam
+        commodi vitae at, consequatur quidem eaque vero quae voluptatem
+        expedita fuga pariatur?
+      </p>
+    </div>
+
+        
+
+      <img
+        src="assets/images/APAAME_20101006_DLK-0336 Edit.gif"
+        class="col-3 rounded float-end"
+        alt=""
+      />
+      <img
+        src="assets/images/Nick-Eyre.jpg"
+        class="col-3 rounded float-end"
+        alt="..."
+      />
+    </div> -->
+      
+    </div>
+
+<!-- carousal part start  -->
+
+
+
+
+<!-- all news part start  -->
+<section class="container-fluid position-absolute top-180 mt-1 ">
+
+  <div class="row info">
+
+    <!-- <div class="heading d-flex align-items-center">
+      <h2 class="ms-5">NEWS |</h2>
+      <a href="#" class="text-dark text-decoration-none p-1">All News</a>
+    </div> -->
+   
+    <div class="col-md-3 mt-2 d-flex justify-content-center corcol ">
+      <a href="#" class="text-decoration-none text-center"
+        ><img
+          src="assets/images/oxford/i11.png"
+          class="img-fluid"
+          alt=""
+        />
+        <p class="text-dark text-center">
+          James Webb Space Telescope reveals new surprises on galaxy organic molecules near black holes
+        </p></a
+      >
+    </div>
+    <div class="col-md-3 mt-2 d-flex justify-content-center">
+      <a href="#" class="text-decoration-none text-center"
+        ><img
+        src="assets/images/oxford/i12.jpg"
+        class="img-fluid"
+          alt=""
+        />
+        <p class="text-dark text-center">
+          University of Oxford partners with Novo Nordisk Foundation to offer new research opportunities for talented international postdoctoral scientists
+        </p></a
+      >
+    </div>
+    <div class="col-md-3 mt-2 d-flex justify-content-center">
+      <a href="#" class="text-decoration-none text-center"
+        ><img
+        src="assets/images/oxford/i13.png"
+        class="img-fluid"
+          alt=""
+        />
+        <p class="text-dark text-center">
+          There is no such thing as Trussonomics: Sir Dieter Helm on strong opinions, prime ministers and making an impact
+        </p></a
+      >
+    </div>
+
+    <div class="col-md-3 mt-2 d-flex justify-content-center">
+     
+      <div class="row">
+       
+        <div class="col-md-12">
+          
+          <h5 class="p-3">
+            A Little Look at… What animals eat Museum of Natural History 12
+            SEP 2022
+          </h3>
+        </div>
+        <div class="col-md-12 my-3 info">
+         
+         <a href="#" class="text-decoration-none text-dark"> <h5 class="p-3">A mathematicla journey through<br/>
+          scales-martin harrier</h5>
+        </a><p class="p-3 mt-0">mathematical institute</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- discover part start  -->
+<section class="container-fluid my-5 discover ">
+  <div class="row">
+    <div class="col-md-12 mx-auto">
+      <h2 class="text-uppercase p-2">discover</h2>
+      <div class="owl-carousel owl-theme my-5">
+
+
+
+
+        <div class="item ">
+          <a href="#">
+            <img src="assets/images/oxford/conv_awful_jokers.jpg" class="img-fluid"
+          /></a>
+          <a href="#" class="text-center text-decoration-none text-dark p-1"
+            >OXFORD IN THE CONVERSATION</a
+          >
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="assets/images/oxford/disc_oxplore_musicmatter.jpg" class="img-fluid"
+          /></a>
+          <a href="#" class="text-center text-decoration-none text-dark p-1"
+            >OXPLORE:IT IS THE HOME OF BIG QUESTIONS</a
+          >
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="assets/images/oxford/disc_pod_stuents.jpg" class="img-fluid"
+          /></a>
+          <a href="#" class="text-center text-decoration-none text-dark p-1"
+            >FEATURED PODCASTS</a
+          >
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="assets/images/oxford/disc_ukraine_flag.jpg" class="img-fluid"
+          /></a>
+          <a href="#" class="text-center text-decoration-none text-dark p-1"
+            >University response to the invasion of Ukraine</a
+          >
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="assets/images/oxford/dNx8WGo2Qs0.jpg" class="img-fluid"
+          /></a>
+          <a href="#" class="text-center text-decoration-none text-dark p-1"
+            >APPLYING FOR MASTERS IN OXFORD</a
+          >
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="assets/images/oxford/EU-from-air.jpg" class="img-fluid"
+          /></a>
+          <a href="#" class="text-center text-decoration-none text-dark p-1"
+            >THE OXFORD POLITICS BLOG</a
+          >
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="assets/images/oxford/landshaft.jpg" class="img-fluid"
+          /></a>
+          <a href="#" class="text-center text-decoration-none text-dark p-1"
+            >LANDSCHAFT-AN EXILARATING FUSION OF THEHNO,POETRY AND FILM</a
+          >
+        </div>
+
+        <div class="item">
+          <a href="#">
+            <img src="assets/images/oxford/oed_newwords22.jpg" class="img-fluid"
+          /></a>
+          <a href="#" class="text-center text-decoration-none text-dark p-1"
+            >THE OED BLOG</a
+          >
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="assets/images/oxford/oup_pyramids.jpg" class="img-fluid"
+          /></a>
+          <a href="#" class="text-center text-decoration-none text-dark p-1"
+            >Can e-cigarettes help you stop smoking?</a
+          >
+        </div>
+        <div class="item">
+          <a href="#"
+            ><img src="assets/images/oxford/oxmart_zero.jpg" class="img-fluid"
+          /></a>
+          <a href="#" class="text-center text-decoration-none text-dark p-1"
+            >THE OXFORD MARTIN SCHOOL</a
+          >
+        </div>
+        <div class="item">
+          <a href="#"
+            ><img src="assets/images/oxford/quad_liberty.jpg" class="img-fluid"
+          /></a>
+          <a href="#" class="text-center text-decoration-none text-dark p-1"
+            >SWEET TESTY LIABRARY</a
+          >
+        </div>
+        <div class="item">
+          <a href="#"
+            ><img src="assets/images/oxford/sparks_ecigs.jpg" class="img-fluid"
+          /></a>
+          <a href="#" class="text-center text-decoration-none text-dark p-1"
+            >CAN E-SEGARATTES HELP YOU STOP SMOKKING</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ <!-- studying at oxford  -->
+ <section class="container-fluid  position-relative" style="margin-top: 5px;">
+  <div class="row study ">
+    <div class="col-md-3 position-relative aabb ">
+   <a href="#">   <img src="assets/images/oxford/i1.jpg" class="img-fluid  my-2  " alt="">
+    </a>
+    <div class="position-absolute  bottom-0 start-1 mb-3">
+      <a href="#" class=" aaa  fs-5 py-2  text-decoration-none  ">Undergraduate Admission   <i class="  fs-3 fa-solid fa-angle-right  py-2"></i>    </a>
+     </div>
+  
+    </div>
+    <div class="col-md-3 ">
+   <a href="#">   <img src="assets/images/oxford/i2.jpg" class="img-fluid  my-2 " alt=""></a>
+   <div class="position-absolute  bottom-0 start-1 mb-3">
+    <a href="#" class=" aaa  fs-5 py-2  text-decoration-none  ">Graduate Admission   <i class="  fs-3 fa-solid fa-angle-right  py-2"></i>    </a>
+   </div>
+
+       </div>
+    <div class="col-md-3 ">
+   <a href="#">   <img src="assets/images/oxford/i3.jpg" class="img-fluid  my-2 " alt=""></a>
+   <div class="position-absolute  bottom-0 start-1 mb-3">
+    <a href="#" class=" aaa  fs-5 py-2  text-decoration-none  ">Continuing Admission   <i class="  fs-3 fa-solid fa-angle-right  py-2"></i>    </a>
+   </div>
+
+       </div>
+    <div class="col-md-3 ">
+   <a href="#">   <img src="assets/images/oxford/i4.jpg" class="img-fluid  my-2 " alt=""></a>
+   <div class="position-absolute  bottom-0 start-1 mb-3">
+    <a href="#" class=" aaa  fs-5 py-2  text-decoration-none  ">Current Oxford Students <i class="  fs-3 fa-solid fa-angle-right  py-2"></i>    </a>
+   </div>
+
+        </div>
+  </div>
+
+</section>
+
+<!-- footer part start  -->
+ <section class="container-fluid footer">
+  <div class="row d-flex align-items-center">
+   <h2 class="text-light fs-4 p-2 mt-1 ">CONNECT WITH US</h2> 
+  </div>
+  <hr/>
+  <div class="row ">
+    <div class="col-md-3 border-start border-light">
+      <h2 class="fs-4 text-light text-uppercase fw-400 ms-4">information about</h2>
+      <ul type="none" class="footerinfo">
+        <li><a href="#" class="text-decoration-none">oxfor university</a></li>
+        <li><a href="#" class="text-decoration-none">oxfor research</a></li>
+        <li><a href="#" class="text-decoration-none">oxfor course</a></li>
+        <li><a href="#" class="text-decoration-none">oxfor fees</a></li>
+        <li><a href="#" class="text-decoration-none">oxfor stratigic plan</a></li>
+        <li><a href="#" class="text-decoration-none">oxfor university</a></li>
+        <li><a href="#" class="text-decoration-none">oxfor university</a></li>
+        <li><a href="#" class="text-decoration-none">oxfor university</a></li>
+        <li><a href="#" class="text-decoration-none">oxfor university</a></li>
+        
+      </ul>
+    </div>
+    <div class="col-md-3 border-start border-light">
+      <h2 class="fs-4 text-light text-uppercase fw-400 ms-4">information for</h2>
+      <ul type="none" class="footerinfo">
+        <li><a href="#" class="text-decoration-none">oxfor university</a></li>
+        <li><a href="#" class="text-decoration-none">oxfor research</a></li>
+        <li><a href="#" class="text-decoration-none">oxfor course</a></li>
+        <li><a href="#" class="text-decoration-none">oxfor fees</a></li>
+        <li><a href="#" class="text-decoration-none">oxfor stratigic plan</a></li>
+        <li><a href="#" class="text-decoration-none">oxfor university</a></li>
+        <li><a href="#" class="text-decoration-none">oxfor university</a></li>
+        <li><a href="#" class="text-decoration-none">oxfor university</a></li>
+        <li><a href="#" class="text-decoration-none">oxfor university</a></li>
+        
+      </ul>
+    </div>
+    <div class="col-md-3 border-start border-light">
+      <h2 class="fs-4 text-light text-uppercase fw-400 ms-4">quick links</h2>
+      <ul type="none" class="footerinfo">
+        <li><a href="#" class="text-decoration-none">oxfor university</a></li>
+        <li><a href="#" class="text-decoration-none">oxfor research</a></li>
+        <li><a href="#" class="text-decoration-none">oxfor course</a></li>
+        <li><a href="#" class="text-decoration-none">oxfor fees</a></li>
+        <li><a href="#" class="text-decoration-none">oxfor stratigic plan</a></li>
+        <li><a href="#" class="text-decoration-none">oxfor university</a></li>
+        <li><a href="#" class="text-decoration-none">oxfor university</a></li>
+        <li><a href="#" class="text-decoration-none">oxfor university</a></li>
+        <li><a href="#" class="text-decoration-none">oxfor university</a></li>
+        
+      </ul>
+    </div>
+   
+  </div>
+  <hr/>
+
+  <div class="row d-flex">
+    <div class="col-md-12 col-sm-6d-flex justify-content-around align-items-center">
+     <p class="text-light"> &copy;university of oxford 2022</p>
+    <a href="#" class="text-decoration-none mx-1">contact us</a>
+     <a href="#" class="text-decoration-none mx-1">legal</a>
+    <a href="#" class="text-decoration-none mx-1">about this cite</a>
+    <a href="#" class="text-decoration-none mx-1" >privesy policy</a>
+    <a href="#" class="text-decoration-none mx-1" >about cookies</a>
+    <a href="#" class="text-decoration-none mx-1">assicibility statement</a>
+
+    </div>
+    
+
+  </div>
+ </section>
+
+    </section>
+
+   
+
+
+   
+ 
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"
+></script>
+<!-- <script src="assets/dist/owl.carousel.min.js"></script> -->
+<script src="assets/owl/owl.carousel.min.js"></script>
+<script>
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 5,
+      },
+    },
+  });
+</script>
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
